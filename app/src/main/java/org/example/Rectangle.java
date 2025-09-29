@@ -1,7 +1,7 @@
 package org.example;
 
-public class Rectangle extends Shape{
-    priavte double length:
+public class Rectangle extends Shape implements Polygon {
+    private double length;
     private double width;
 
     public Rectangle (double length, double width) {
@@ -28,5 +28,9 @@ public class Rectangle extends Shape{
     }
     public void setWidth(double width) {
         this.width = width;
+    }
+    @Override
+    public int numberOfSides() {
+        return 4;
     }
 }
